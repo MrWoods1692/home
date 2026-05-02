@@ -60,7 +60,7 @@ export default function Home() {
           </div>
           <h3 className="text-2xl font-hand-semibold">{t('home.tech_title')}</h3>
           <div className="flex flex-wrap gap-2">
-            {['React', 'Rust', 'Go', 'PHP', 'TypeScript'].map(tech => (
+            {['React', 'Rust', 'Python', 'Docker', 'TypeScript'].map(tech => (
               <span key={tech} className="px-3 py-1 bg-background border border-primary/20 rounded-md text-sm font-hand-semibold">
                 {tech}
               </span>
@@ -81,9 +81,9 @@ export default function Home() {
           </p>
           <div className="pt-4">
             <div className="w-full bg-muted h-2 rounded-full overflow-hidden">
-              <div className="bg-primary h-full w-[45%]" />
+              <div className="bg-primary h-full w-[15%]" />
             </div>
-            <p className="text-[10px] mt-1 text-right opacity-50">{t('home.future_progress')}: 45%</p>
+            <p className="text-[10px] mt-1 text-right opacity-50">{t('home.future_progress')}: 15%</p>
           </div>
         </div>
       </section>
