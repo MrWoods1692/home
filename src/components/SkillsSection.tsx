@@ -54,13 +54,13 @@ export function SkillsSection() {
 
   const getCategoryInfo = (cat: string) => {
     const map: Record<string, string> = {
-      "前端开发": "frontend",
-      "后端开发": "backend",
-      "客户端 & 其他": "client",
-      "数据库": "db",
-      "运维工具": "ops",
-      "运行环境": "env",
-      "开发工具": "tools"
+      "[技能类别1]": "frontend",
+      "[技能类别2]": "backend",
+      "[技能类别3]": "client",
+      "[技能类别4]": "db",
+      "[技能类别5]": "ops",
+      "[技能类别6]": "env",
+      "[技能类别7]": "tools"
     };
     const key = map[cat] || "tools";
     return {
@@ -104,16 +104,9 @@ export function SkillsSection() {
               <div className="hand-divider opacity-10 !my-2" />
               <div className="flex flex-wrap gap-2">
                 {skill.items.map((item, i) => {
-                  const itemMap: Record<string, string> = {
-                    "宝塔面板": "bt_panel",
-                    "运行环境": "runtime",
-                    "开发工具": "dev_tools",
-                    "客户端 & 其他": "client_other"
-                  };
-                  const key = itemMap[item];
                   return (
                     <Badge key={i} variant="secondary" className="hand-border bg-transparent hover:bg-primary hover:text-primary-foreground transition-all px-3 py-1">
-                      {key ? t(`common.skills.${key}`) : item}
+                      {t(`common.skills.[技能项${i + 1}]`)}
                     </Badge>
                   );
                 })}

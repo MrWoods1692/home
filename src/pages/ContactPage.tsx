@@ -108,7 +108,7 @@ export default function ContactPage() {
                 </DialogHeader>
                 <div className="flex justify-center p-8 relative">
                   <div className="washi-tape" />
-                  <img src="https://img.cdn1.vip/i/69f565a295ead_1777690018.webp" alt="Alipay QR" className="hand-border w-64 h-64 shadow-2xl rotate-1" />
+                  <img src="[在此处填写支付宝收款码URL]" alt="Alipay QR" className="hand-border w-64 h-64 shadow-2xl rotate-1" />
                 </div>
               </DialogContent>
             </Dialog>
@@ -125,7 +125,7 @@ export default function ContactPage() {
                 </DialogHeader>
                 <div className="flex justify-center p-8 relative">
                   <div className="washi-tape" />
-                  <img src="https://img.cdn1.vip/i/69f565401c23e_1777689920.webp" alt="WeChat QR" className="hand-border w-64 h-64 shadow-2xl -rotate-1" />
+                  <img src="[在此处填写微信收款码URL]" alt="WeChat QR" className="hand-border w-64 h-64 shadow-2xl -rotate-1" />
                 </div>
               </DialogContent>
             </Dialog>

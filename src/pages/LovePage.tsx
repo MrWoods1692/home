@@ -64,9 +64,9 @@ export default function LovePage() {
             <div className="flex flex-col items-center gap-4">
               <div className="scrapbook-photo -rotate-6 hover:rotate-0 transition-transform duration-500">
                 <div className="w-36 h-44 overflow-hidden bg-neutral-100 flex flex-col">
-                  <img src={PERSONAL_INFO.avatars[0]} alt="Woods" className="w-full h-36 object-cover" />
+                  <img src={PERSONAL_INFO.avatars[0]} alt="[人物1姓名]" className="w-full h-36 object-cover" />
                   <div className="flex-1 flex items-center justify-center font-hand-semibold text-sm opacity-60">
-                    Woods
+                    [你的名字]
                   </div>
                 </div>
                 {/* Small washi tape on corner */}
@@ -82,9 +82,9 @@ export default function LovePage() {
             <div className="flex flex-col items-center gap-4">
               <div className="scrapbook-photo rotate-6 hover:rotate-0 transition-transform duration-500">
                 <div className="w-36 h-44 overflow-hidden bg-neutral-100 flex flex-col">
-                  <img src="https://img.cdn1.vip/i/69f4cece6a7a9_1777651406.webp" alt="Girlfriend" className="w-full h-36 object-cover" />
+                  <img src="[在此处填写头像URL]" alt="[人物2姓名]" className="w-full h-36 object-cover" />
                   <div className="flex-1 flex items-center justify-center font-hand-semibold text-sm opacity-60">
-                    {t('common.girlfriend')}
+                    [你对象的名字]
                   </div>
                 </div>
                 {/* Small washi tape on corner */}
