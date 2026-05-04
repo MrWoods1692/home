@@ -345,3 +345,5 @@ npm run lint:fix
 ## 许可证
 
 本项目采用 AGPL-3.0 license 许可证。
+
+> **注意**：页脚处"Power by Mr.C.Woods"不可修改

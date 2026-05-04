@@ -44,7 +44,7 @@ export function Footer() {
               EST. 2026 • FOREST SPACE
             </div>
             <p className="font-hand-semibold text-lg opacity-70 mt-2">
-              © {new Date().getFullYear()} Woods Chen.
+              © {new Date().getFullYear()} [Your Name]
             </p>
           </div>
 
@@ -64,8 +64,8 @@ export function Footer() {
 
           {/* Right: Quick Links as scribbled notes */}
           <div className="flex flex-col items-center md:items-end gap-3 font-hand-semibold opacity-70">
-            <p className="text-xs uppercase opacity-40 mb-2">{language === 'en' ? 'Me?' : '我？'}</p>
-            {['------', 'Chen Sen Lin', '------'].map((link) => (
+            <p className="text-xs uppercase opacity-40 mb-2">{language === 'en' ? 'Author?' : '作者？'}</p>
+            {['------', 'Power by Mr.C.Woods', '------'].map((link) => (
               <span key={link} className="hover:text-primary cursor-pointer transition-all hover:translate-x-[-4px] notebook-line pb-1">
                 {link}
               </span>
