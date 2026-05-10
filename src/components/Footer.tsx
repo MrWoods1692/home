@@ -65,7 +65,7 @@ export function Footer() {
           {/* Right: Quick Links as scribbled notes */}
           <div className="flex flex-col items-center md:items-end gap-3 font-hand-semibold opacity-70">
             <p className="text-xs uppercase opacity-40 mb-2">{language === 'en' ? 'Me?' : '我？'}</p>
-            {['------', 'Chen Sen Lin', '------'].map((link) => (
+            {['Powered by', 'Chen Sen Lin', '2026'].map((link) => (
               <span key={link} className="hover:text-primary cursor-pointer transition-all hover:translate-x-[-4px] notebook-line pb-1">
                 {link}
               </span>
