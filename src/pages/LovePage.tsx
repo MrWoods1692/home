@@ -82,7 +82,7 @@ export default function LovePage() {
             <div className="flex flex-col items-center gap-4">
               <div className="scrapbook-photo rotate-6 hover:rotate-0 transition-transform duration-500">
                 <div className="w-36 h-44 overflow-hidden bg-neutral-100 flex flex-col">
-                  <img src="https://img.cdn1.vip/i/69f4cece6a7a9_1777651406.webp" alt="Girlfriend" className="w-full h-36 object-cover" />
+                  <img src="https://img.cdn1.vip/i/6a0021d31d54e_1778393555.webp" alt="Girlfriend" className="w-full h-36 object-cover" />
                   <div className="flex-1 flex items-center justify-center font-hand-semibold text-sm opacity-60">
                     {t('common.girlfriend')}
                   </div>
