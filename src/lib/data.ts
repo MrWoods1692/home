@@ -6,8 +6,8 @@ export const PERSONAL_INFO = {
   birthday: "2010-10-22",
   hometown: "中国 桂林",
   avatars: [
-    "https://q1.qlogo.cn/g?b=qq&nk=1692138502&s=640",
-    "https://img.cdn1.vip/i/69be880e3836f_1774094350.webp"
+    "https://img.cdn1.vip/i/6a00223138677_1778393649.webp",
+    "https://img.cdn1.vip/i/6a0021d31d54e_1778393555.webp"
   ],
   inspiration: "人最宝贵的是生命。生命对于每个人只有一次。人的一生应当这样度过：当回首往事时，他不因虚度年华而悔恨，也不因碌碌无为而羞耻；这样，在临死的时候，he能够说：'我的整个生命和全部精力，都已经献给了世界上最壮丽的事业——为人类的解放而斗争。",
   loveStatus: "正在给女友编写内核。",
