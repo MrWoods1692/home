@@ -27,7 +27,7 @@ const translations: Record<Language, Translation> = {
       tech_title: '技术栈焦点',
       tech_desc: '追求高性能与简洁代码的完美结合，从底层到前端全链路覆盖。',
       future_title: '未来计划',
-      future_content: '完善LangBot生态。',
+      future_content: '完善Campux生态。',
       future_progress: '生态构建进度',
       cta_title: '想一起聊聊技术吗？',
       cta_desc: '无论是开源项目合作、技术选型探讨，还是仅仅想打个招呼，我都非常欢迎。',
