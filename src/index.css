@@ -1,0 +1,282 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'YangRenDongZhuShiTi-Semibold';
+  src: url('https://resource-static.bj.bcebos.com/fonts/YangRenDongZhuShiTi-Semibold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YangRenDongZhuShiTi-Regular';
+  src: url('https://resource-static.bj.bcebos.com/fonts/YangRenDongZhuShiTi-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --background: 40 10% 98%;
+    --foreground: 0 0% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 20%;
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 0 0% 94%;
+    --accent-foreground: 0 0% 20%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 0 0% 20%;
+    --sidebar-background: 40 10% 98%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 0 0% 0%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 94%;
+    --sidebar-accent-foreground: 0 0% 20%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 0 0% 20%;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 90%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 90%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 90%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 90%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 80%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 0% 98%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 0% 80%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 3px;
+  }
+  body {
+    @apply bg-background text-foreground font-hand-regular selection:bg-black selection:text-white;
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-hand-semibold;
+  }
+}
+
+.hand-border {
+  border: 2px solid hsl(var(--foreground));
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.hand-divider {
+  height: 2px;
+  background: hsl(var(--foreground));
+  width: 100%;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+/* Custom Cursor */
+* {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z'/%3E%3C/svg%3E"), auto !important;
+}
+
+a, button, [role="button"] {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 7l10 10M17 7L7 17'/%3E%3C/svg%3E"), pointer !important;
+}
+
+.dynamic-island {
+  @apply fixed top-4 left-1/2 -translate-x-1/2 z-[999] rounded-2xl px-4 py-2 flex items-center justify-between gap-4;
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  max-width: 95vw;
+  width: auto;
+  min-width: 200px;
+  backdrop-filter: blur(12px);
+}
+
+.dynamic-island:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+.dynamic-island-expanded {
+  @apply px-6 py-3;
+  width: auto;
+}
+
+.dynamic-island-compact {
+  @apply py-1.5 px-3 rounded-full opacity-90 scale-95;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.dark .dynamic-island {
+  /* Dark mode overrides if any */
+}
+
+@media (max-width: 640px) {
+  .dynamic-island {
+    @apply px-4 gap-3 min-w-[320px];
+  }
+}
+
+.paper-3d {
+  @apply border-2 border-primary rounded-xl;
+  box-shadow: 6px 6px 0px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+
+.paper-3d-white {
+  @apply paper-3d bg-card;
+}
+
+.paper-3d-black {
+  @apply paper-3d bg-primary text-primary-foreground;
+}
+
+.paper-3d:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px rgba(0,0,0,0.15);
+}
+
+.paper-card {
+  @apply bg-card p-6 relative;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  border: 1px solid hsl(var(--border));
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.sticky-note {
+  @apply bg-[#fff9c4] dark:bg-[#4a4a2a] text-[#5d4037] dark:text-[#d7ccc8] p-6 shadow-lg relative rotate-[-2deg] transition-transform hover:rotate-0;
+  border-radius: 2px 2px 30px 2px/2px 2px 2px 30px;
+  font-family: 'YangRenDongZhuShiTi-Regular', cursive;
+}
+
+.sticky-note::before {
+  content: "";
+  @apply absolute top-0 left-1/2 -translate-x-1/2 w-12 h-6 bg-white/40 dark:bg-black/20 -translate-y-1/2 rotate-[1deg];
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='40'%3E%3Cpath d='M0 20 Q 25 0 50 20 T 100 20' fill='none' stroke='black' stroke-width='40'/%3E%3C/svg%3E");
+}
+
+.polaroid {
+  @apply bg-white dark:bg-neutral-800 p-3 pb-8 shadow-xl border border-neutral-200 dark:border-neutral-700 transition-all hover:scale-105;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.washi-tape {
+  @apply absolute -top-4 left-1/2 -translate-x-1/2 w-24 h-8 bg-primary/20 backdrop-blur-sm -rotate-2 z-20 pointer-events-none;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='30'%3E%3Cpath d='M0 5 L10 2 L20 7 L30 3 L40 8 L50 4 L60 9 L70 5 L80 10 L90 6 L100 11 L100 25 L90 20 L80 28 L70 22 L60 27 L50 21 L40 29 L30 23 L20 28 L10 22 L0 27 Z' /%3E%3C/svg%3E");
+}
+
+.cassette-label {
+  @apply border-2 border-primary p-4 rounded-sm relative overflow-hidden bg-muted/20;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(0,0,0,0.05) 1px, rgba(0,0,0,0.05) 2px);
+}
+
+.notebook-line {
+  @apply relative;
+}
+
+.notebook-line::after {
+  content: "";
+  @apply absolute bottom-0 left-0 w-full h-[1px] bg-primary/20;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.notebook-paper {
+  background-color: #fff;
+  background-image: 
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+}
+
+.dark .notebook-paper {
+  background-color: #1a1a1a;
+  background-image: 
+    linear-gradient(90deg, transparent 79px, #3a3a3a 79px, #3a3a3a 81px, transparent 81px),
+    linear-gradient(#2a2a2a .1em, transparent .1em);
+  background-size: 100% 1.2em;
+}
+
+.hand-sketch-box {
+  @apply relative p-4;
+  border: 2px solid currentColor;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.scrapbook-photo {
+  @apply relative p-2 bg-white dark:bg-neutral-800 shadow-lg border border-neutral-200 dark:border-neutral-700;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}
+
+.coffee-stain {
+  @apply absolute w-32 h-32 rounded-full border-4 border-amber-900/5 dark:border-amber-100/5 rotate-45 pointer-events-none;
+}
+
+.hand-stamp {
+  @apply border-2 border-primary/30 px-3 py-1 rounded-sm rotate-[-8deg] text-xs font-hand-semibold opacity-40 relative inline-block;
+  background-image: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.05) 100%);
+}
+
+.footer-sketch {
+  @apply opacity-10 pointer-events-none absolute bottom-4 right-4;
+}
