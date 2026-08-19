@@ -87,7 +87,18 @@ const translations: Record<Language, Translation> = {
         ai_assistant: '集成多种大模型的智能对话与任务处理助手。',
         hydro_oj: '基于HydroOJ的逆向接口实现本地 IDE兼OJ。',
         free_one_api: '聚合多种 AI 的免费分发平台。',
-        personal_home: '本网站，用于展示和介绍我自己。'
+        personal_home: '本网站，用于展示和介绍我自己。',
+        mosoo: '开源的 Cloudflare 原生 Agent 运行时，支持 Codex、Claude Agent SDK 和 OpenCode，提供 API 端点、隔离沙箱与可审计运行记录。',
+        memories: '一个基于 Rust + React 的全栈校园回忆图片分享平台，支持多学校独立运营、OAuth 2.0 校园认证、AI 自动审核、EXIF 信息提取、实时统计与定时任务。',
+        blog: '开源 blog，让你不写代码就开始写 blog，管理 blog 内容。无需服务器，无需费用。',
+        kg_campux: '校园墙自动化和校内服务统一认证解决方案｜自助投稿、自动审核｜万能墙、表白墙自动化发布｜基于 PHP 和 Rust 开发的轻量级后端框架。',
+        newsnook: '新闻聚合与阅读平台。',
+        twilight_echo: '一款为本地收藏、流媒体探索与 HiFi 播放打造的现代桌面音乐播放器。',
+        csl: '开源、跨平台、优秀的 Minecraft Java 版启动器。',
+        ra_study: '学生成长系统。',
+        langbot_plugins: 'LangBot 的一些插件。',
+        qq_repo_guardian: '一个 QQ 机器人，可自动通知 GitHub 仓库的变化，可配置多个仓库，并将通知发送到指定群聊或私聊，同时支持群内答疑解惑和管理员指令。',
+        twenty58: '258 班级纪念网站。'
       }
     },
     blog: {
@@ -112,6 +123,7 @@ const translations: Record<Language, Translation> = {
       types: {
         biz_mail: '企业邮箱',
         google_mail: '谷歌邮箱',
+        outlook_mail: 'Outlook邮箱',
         qq_mail: 'QQ邮箱',
         qq: '腾讯QQ',
         wechat: 'WeChat',
@@ -182,195 +194,6 @@ const translations: Record<Language, Translation> = {
         dontGoHome: '不想回家',
         passion: '受难曲',
         iceAge: '冰河时代',
-        us: '只有我和你的地方'
-      }
-    }
-  },
-   'zh-TW': {
-    nav: {
-      home: '首頁',
-      about: '關於我',
-      skills: '技能',
-      projects: '項目',
-      blog: '部落格',
-      contact: '聯繫我',
-    },
-    home: {
-      welcome: '歡迎來到我的主頁',
-      bio: '一個熱愛技術、追求極致的初中生，專注於專案開發與演算法競賽。喜歡探索各種新奇的技術棧，從底層的 C++ 到現代的 Rust，從傳統的後端 PHP 到現代的微服務架構。目前正在桂林市奎光學校就讀，致力於成為一名優秀的全棧開發工程師。',
-      recent_title: '最近動態',
-      recent_content: '正在深耕 Rust 開發，並探索 AI Agent 在自動化工作流中的更多可能性。',
-      recent_item1: '完成了 Campux-Memories 的核心框架',
-      recent_item2: '開始學習 Rust 開發',
-      tech_title: '技術棧焦點',
-      tech_desc: '追求高性能與簡潔代碼的完美結合，從底層到前端全鏈路覆蓋。',
-      future_title: '未來計劃',
-      future_content: '完善 Campux 生態。',
-      future_progress: '生態構建進度',
-      cta_title: '想一起聊聊技術嗎？',
-      cta_desc: '無論是開源項目合作、技術選型探討，還是僅僅想打個招呼，我都非常歡迎。',
-      cta_button: '即刻聯繫我',
-    },
-    about: {
-      title: '關於我',
-      academic: '學業經歷',
-      awards: '獲獎經歷',
-      hometown: '我的家鄉',
-      hometown_name: '中國 桂林',
-      music: '我常聽的音樂',
-      friends: '我的好友',
-      motto: '座右銘',
-      age: '我的年齡',
-      motto_text: '無他，惟手熟爾',
-      inspiration: '人最寶貴的是生命。生命對於每個人只有一次。人的一生應當這樣度過：當回首往事時，他不因虛度年華而悔恨，也不因碌碌無為而羞恥；這樣，在臨死的時候，他能夠說：「我的整個生命和全部精力，都已經獻給了世界上最壯麗的事業——為人類的解放而鬥爭。」',
-      academic_stages: {
-        preschool: '幼稚園',
-        primary: '小學',
-        junior: '初中',
-        senior: '高中',
-        senior: '高中',
-        senior: '高中',
-        senior: '高中'
-      },
-      award_orgs: {
-        ccf: '中國計算機協會',
-        activity: '活動',
-        guilinEdu: '桂林市教育局',
-        gxcf: '廣西計算機協會'
-      },
-      friend_bios: {
-        qin: 'LangBot創始人；Dify後端開發者；技術大牛；我的學長。',
-        chen: '我的好朋友。國龍學生。',
-        moke: '姐姐哦。國龍學生。',
-        m: '...'
-      },
-      hometown_desc: [
-        '漓江如一條碧綠的綢帶，蜿蜒於奇峰之間，竹筏輕蕩，山水入畫，這便是我魂牽夢繞的家鄉。',
-        '象鼻山靜臥於漓江畔，如一頭巨象飲水，夜幕降臨時燈火闌珊，更顯神秘動人。',
-        '陽朔西街的青石板路上，中西文化交融碰撞，夜晚的燈籠與民謠，是我最懷念的鄉愁。',
-        '七星公園峰林疊翠，溶洞幽深，一步一景，彷彿走進了桂林山水的立體畫卷。',
-        '蘆笛岩內鐘乳石千姿百態，燈光映照下如夢似幻，是大自然用億萬年雕琢的藝術殿堂。',
-        '日月雙塔矗立於杉湖之上，金碧輝煌，倒影搖曳，是桂林夜色中最溫暖的一抹光。'
-      ]
-    },
-    skills: {
-      title: '技能樹',
-      duration: '學習時長',
-      frontend: '前端開發',
-      framework: '前端框架',
-      backend: '後端開發',
-      systems: '系統程式設計',
-      client: '客戶端開發',
-      db: '資料庫',
-      server: '伺服器運維',
-      deploy: '部署平台',
-      virtual: '虛擬化',
-      os: '作業系統',
-      container: '容器化',
-      tools: '開發工具',
-      ai: 'AI 輔助',
-    },
-    projects: {
-      title: '我的項目',
-      github: '代碼倉庫',
-      site: '線上演示',
-      items: {
-        langbot: '開源的即時通訊 AI 機器人平台，支援 QQ、企業微信、飛書、釘釘、KOOK 等主流平台，讓 AI 應用觸達任何場景。',
-        xmail: '專業級郵件管理工具，提升辦公效率。',
-        campux: '全球最先進的智能 QQ 空間校園牆系統（沒有之一），為學生提供便捷服務。',
-        cpp_ide: '基於 Web 的輕量級 C++ 編譯與執行環境。',
-        img_cloud: '高效能、安全的雲端圖床服務。',
-        ai_assistant: '整合多種大模型的智慧對話與任務處理助手。',
-        hydro_oj: '基於 HydroOJ 的逆向介面實現本地 IDE 兼 OJ。',
-        free_one_api: '聚合多種 AI 的免費分發平台。',
-        personal_home: '本網站，用於展示和介紹我自己。'
-      }
-    },
-    blog: {
-      title: '部落格 & 社交',
-    },
-    contact: {
-      title: '聯繫我',
-      copy: '複製',
-      donate: '請我喝咖啡',
-      subtitle: '你的支持是我前進的動力 ❤️',
-      scan_to_pay: '掃描二維碼向我付款',
-      alipay_desc: '打開支付寶掃描二維碼向我付款',
-      wechat_desc: '打開微信掃描二維碼向我付款',
-      aifadian_desc: '點擊前往贊助頁面',
-      types: {
-        biz_mail: '企業郵箱',
-        google_mail: '谷歌郵箱',
-        qq_mail: 'QQ郵箱',
-        qq: '騰訊QQ',
-        wechat: 'WeChat',
-        telegram: 'Telegram',
-        discord: 'Discord'
-      }
-    },
-    common: {
-      alipay: '支付寶',
-      wechat: '微信支付',
-      system: '系統',
-      light: '亮色',
-      dark: '暗色',
-      menu: '菜單',
-      aifadian: '愛發電',
-      visit: '點擊訪問',
-      girlfriend: '女友',
-      skills: {
-        bt_panel: '寶塔面板',
-        runtime: '執行環境',
-        dev_tools: '開發工具',
-        client_other: '用戶端 & 其他'
-      },
-      music: {
-        only: '唯一',
-        sky: '天空沒有極限',
-        peach: '桃花諾',
-        love_distance: '愛能克服遠距離',
-        bubble: '泡沫',
-        countdown: '倒數',
-        sand: '回憶的沙漏',
-        rose: '紅薔薇白玫瑰',
-        like: '喜歡你',
-        fullstop: '句號',
-        lightyear: '光年之外',
-        goodbye: '再見',
-        rain: '雨愛',
-        drop: '跳樓機',
-        march: '義勇軍進行曲',
-        devil: '來自天堂的魔鬼',
-        together: '多遠都要在一起',
-        mySecret: '我的秘密',
-        draw: '畫',
-        heartbeat: '新的心跳',
-        ainy: 'A.I.N.Y.',
-        drunk: '你把我灌醉',
-        almost: '差不多姑娘',
-        farewell: '後會無期',
-        longAfter: '很久以後',
-        walkOnWater: 'Walk on Water',
-        transparent: '透明',
-        zoo: '摩天動物園',
-        flyAway: 'Fly Away',
-        whereDidUGo: 'Where Did U Go',
-        sleepingPrincess: '睡公主',
-        whatHaveUDone: 'What Have U Done',
-        ohBoy: 'Oh Boy',
-        occasionally: '偶爾',
-        gloria: 'GLORIA',
-        notFirst: '你不是第一個離開的人',
-        oldManAndSea: '老人與海',
-        findYou: 'FIND YOU',
-        endOfNight: '夜的盡頭',
-        youthAndSea: '少年與海',
-        hell: 'HELL',
-        centrifugal: '離心力',
-        pause: '讓世界暫停一分鐘',
-        dontGoHome: '不想回家',
-        passion: '受難曲',
-        iceAge: '冰河時代',
         us: '只有我和你的地方'
       }
     }
@@ -473,7 +296,18 @@ const translations: Record<Language, Translation> = {
         ai_assistant: 'Intelligent dialogue and task processing assistant integrating multiple LLMs.',
         hydro_oj: 'Local IDE and OJ implemented based on HydroOJ reverse interface.',
         free_one_api: 'Free distribution platform aggregating multiple AIs.',
-        personal_home: 'This website, used to showcase and introduce myself.'
+        personal_home: 'This website, used to showcase and introduce myself.',
+        mosoo: 'Open-source, Cloudflare-native agent runtime for Codex, Claude Agent SDK, and OpenCode—with API endpoints, isolated sandboxes, and inspectable runs.',
+        memories: 'A full-stack campus memory photo sharing platform built with Rust + React, supporting multi-school independent operation, OAuth 2.0 campus authentication, AI auto-review, EXIF extraction, real-time statistics, and scheduled tasks.',
+        blog: 'Open-source blog that lets you start writing without code—manage your content without servers or fees.',
+        kg_campux: 'Campus wall automation and unified campus service authentication solution | Self-service submissions, auto-review | Auto-posting for all-purpose and confession walls | Lightweight PHP + Rust backend framework.',
+        newsnook: 'News aggregation and reading platform.',
+        twilight_echo: 'A modern desktop music player for local collections, streaming exploration, and HiFi playback.',
+        csl: 'An open-source, cross-platform, excellent Minecraft Java Edition launcher.',
+        ra_study: 'Student growth system.',
+        langbot_plugins: 'A collection of plugins for LangBot.',
+        qq_repo_guardian: 'A QQ bot that auto-notifies GitHub repository changes, supports multiple repos, sends alerts to specified groups or DMs, answers questions in-group, and handles admin commands.',
+        twenty58: '258 class memorial website.'
       }
     },
     blog: {
@@ -498,6 +332,7 @@ const translations: Record<Language, Translation> = {
       types: {
         biz_mail: 'Business Email',
         google_mail: 'Google Email',
+        outlook_mail: 'Outlook Email',
         qq_mail: 'QQ Email',
         qq: 'Tencent QQ',
         wechat: 'WeChat',
@@ -584,7 +419,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>(() => {
-    return (localStorage.getItem('language') as Language) || 'zh-CN';
+    return (localStorage.getItem('language') as Language) || 'en';
   });
 
   useEffect(() => {

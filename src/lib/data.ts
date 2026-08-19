@@ -14,7 +14,7 @@ export const PERSONAL_INFO = {
   friends: [
     {
       name: "秦骏言",
-      avatar: "https://img.cdn1.vip/i/69f567ed652d6_1777690605.webp",
+      avatar: "https://cloudflarecnimg.scdn.io/i/6a85078bc5273_1787103115.webp",
       bio: "LangBot创始人；Dify后端开发者；技术大牛；我的学长。"
     },
     {
@@ -91,8 +91,9 @@ export const BLOGS = [
 
 export const CONTACTS = [
   { type: "企业邮箱", value: "mail@mrcwoods.com", icon: "Mail" },
-  { type: "谷歌邮箱", value: "mr.woods1692@gmail.com", icon: "Mail" },
-  { type: "QQ邮箱", value: "mrcwoods@qq.com", icon: "Mail" },
+      { type: "谷歌邮箱", value: "mr.woods1692@gmail.com", icon: "Mail" },
+      { type: "Outlook邮箱", value: "chen.woods@outlook.com", icon: "Mail" },
+      { type: "QQ邮箱", value: "mrcwoods@qq.com", icon: "Mail" },
   { type: "腾讯QQ", value: "1692138502", icon: "MessageCircle" },
   { type: "WeChat", value: "chensenlin1022", icon: "MessageSquare" },
   { type: "Telegram", value: "@mrcwoods", icon: "Send" },
@@ -216,17 +217,11 @@ export const MUSIC_LIST: MusicItem[] = [
 
 export const PROJECTS = [
   {
-    name: "LangBot",
-    desc: "一个多功能的聊天机器人框架，支持多平台集成。",
-    github: "https://github.com/WoodsChen/LangBot",
-    site: "https://langbot.app",
-    tags: ["Python"]
-  },
-  {
-    name: "Xmail Pro",
-    desc: "专业级邮件管理与自动化工具，提升办公效率。",
-    github: "https://github.com/MrWoods1692/Xmail",
-    tags: ["Rust", "Tauri"]
+    name: "Mosoo",
+    desc: "Open-source, Cloudflare-native agent runtime for Codex, Claude Agent SDK, and OpenCode—with API endpoints, isolated sandboxes, and inspectable runs.",
+    github: "https://github.com/langgenius/mosoo",
+    site: "https://mosoo.ai",
+    tags: ["Cloudflare", "Agent Runtime", "OpenCode", "Claude Agent SDK", "Codex"]
   },
   {
     name: "Campux",
@@ -235,7 +230,74 @@ export const PROJECTS = [
     site: "https://campux.idoknow.top/",
     tags: ["Go", "QQ Bot", "TypeScript"]
   },
-{
+  {
+    name: "Memories",
+    desc: "一个基于Rust + React前端的全栈校园回忆图片分享平台，支持多学校独立运营、OAuth 2.0校园认证、AI自动审核、EXIF信息提取、实时统计与定时任务。",
+    github: "https://github.com/MrWoods1692/Memories",
+    site: "https://memories.mrcwoods.com",
+    tags: ["Rust", "React", "Tailwind CSS", "PostgreSQL", "Express", "Node.js", "OAuth 2.0", "AI", "EXIF"]
+  },
+  {
+    name: "Blog",
+    desc: "开源blog，让你不写代码就开始写 blog，管理 blog 内容。无需服务器，无需费用。",
+    github: "https://github.com/MrWoods1692/blog",
+    site: "https://blog.mrcwoods.com",
+    tags: ["TypeScript", "Blog", "Vercel"]
+  },
+  {
+    name: "Free-one-api",
+    desc: "聚合多种 AI 接口的免费分发平台。",
+    github: "https://github.com/RockChinQ/free-one-api",
+    site: "https://free-one-api.rockchin.top",
+    tags: ["API", "AI", "One-API","Python","LLM"]
+  },
+  {
+    name: "AI智能助手",
+    desc: "集成多种大模型的智能对话与任务处理助手。",
+    github: "https://github.com/MrWoods1692/aidamx",
+    tags: ["Next.js", "LLM", "Assistant"]
+  },
+  {
+    name: "LangBot",
+    desc: "一个多功能的聊天机器人框架，支持多平台集成。",
+    github: "https://github.com/WoodsChen/LangBot",
+    site: "https://langbot.app",
+    tags: ["Python"]
+  },
+  {
+    name: "NewsNook",
+    desc: "新闻。",
+    github: "https://github.com/MrWoods1692/newsnook",
+    site: "https://news.mrcwoods.com/",
+    tags: ["News"]
+  },
+  {
+    name: "Twilight Echo",
+    desc: "一款为本地收藏、流媒体探索与 HiFi 播放打造的现代桌面音乐播放器。",
+    github: "https://github.com/asenyarzc-cpu/Twilight_Echo",
+    tags: ["Music", "Desktop", "HiFi", "Streaming"]
+  },
+  {
+    name: "个人主页",
+    desc: "本页面，展示个人风采与项目成果。",
+    github: "https://github.com/MrWoods1692/home",
+    site: "https://mrcwoods.com",
+    tags: ["React", "Vite", "TypeScript", "Tailwind CSS"]
+  },
+  {
+    name: "258",
+    desc: "258班级纪念网站。",
+    github: "https://github.com/MrWoods1692/258",
+    site: "https://258.mrcwoods.com/",
+    tags: ["React", "Vite", "TypeScript", "Tailwind CSS"]
+  },
+  {
+    name: "Xmail Pro",
+    desc: "专业级邮件管理与自动化工具，提升办公效率。",
+    github: "https://github.com/MrWoods1692/Xmail",
+    tags: ["Rust", "Tauri"]
+  },
+  {
     name: "KG-Campux",
     desc: "校园墙自动化 和 校内服务统一认证解决方案 ｜ 自助投稿、自动审核｜万能墙、表白墙 自动化发布｜基于 PHP 和 Rust 开发 的轻量级后端框架",
     github: "https://github.com/MrWoods1692/KG-Campux",
@@ -254,51 +316,10 @@ export const PROJECTS = [
     tags: ["Web", "Rust", "PHP"]
   },
   {
-    name: "AI智能助手",
-    desc: "集成多种大模型的智能对话与任务处理助手。",
-    github: "https://github.com/MrWoods1692/aidamx",
-    tags: ["Next.js", "LLM", "Assistant"]
-  },
-  {
     name: "Hydro-OJ-IDE",
     desc: "专为 Hydro 在线评测系统设计的开发环境。",
     github: "https://github.com/MrWoods1692/hydro-ojide",
     tags: ["IDE", "Rust", "Hydro","Tauri"]
-  },
-  {
-    name: "Free-one-api",
-    desc: "聚合多种 AI 接口的免费分发平台。",
-    github: "https://github.com/RockChinQ/free-one-api",
-    site: "https://free-one-api.rockchin.top",
-    tags: ["API", "AI", "One-API","Python","LLM"]
-  },
-  {
-    name: "个人主页",
-    desc: "本页面，展示个人风采与项目成果。",
-    github: "https://github.com/MrWoods1692/home",
-    site: "https://mrcwoods.com",
-    tags: ["React", "Vite", "TypeScript", "Tailwind CSS"]
-  },
-  {
-    name: "Memories-Client",
-    desc: "一个基于Rust + React前端的全栈校园回忆图片分享平台，支持多学校独立运营、OAuth 2.0校园认证、AI自动审核、EXIF信息提取、实时统计与定时任务。",
-    github: "https://github.com/idoknow/Memories-Client",
-    site: "https://memories.mrcwoods.com",
-    tags: ["Rust", "React", "Tailwind CSS", "PostgreSQL", "Express", "Node.js", "OAuth 2.0", "AI", "EXIF"]
-  },
-  {
-    name: "Memories-Server",
-    desc: "一个基于Rust + React前端的全栈校园回忆图片分享平台，支持多学校独立运营、OAuth 2.0校园认证、AI自动审核、EXIF信息提取、实时统计与定时任务。",
-    github: "https://github.com/idoknow/Memories-Server",
-    site: "https://memories-docs.mrcwoods.com",
-    tags: ["Rust", "React", "Tailwind CSS", "PostgreSQL", "Express", "Node.js", "OAuth 2.0", "AI", "EXIF"]
-  },
-  {
-    name: "258",
-    desc: "258班级纪念网站。",
-    github: "https://github.com/MrWoods1692/258",
-    site: "https://258.mrcwoods.com/",
-    tags: ["React", "Vite", "TypeScript", "Tailwind CSS"]
   },
   {
     name: "QQ Repo Guardian",
@@ -307,11 +328,24 @@ export const PROJECTS = [
     tags: ["Rust", "Shell", "QQ Bot"]
   },
   {
-    name: "Blog",
-    desc: "开源blog，让你不写代码就开始写 blog，管理 blog 内容。无需服务器，无需费用。",
-    github: "https://github.com/MrWoods1692/blog",
-    site: "https://blog.mrcwoods.com",
-    tags: ["TypeScript", "Blog", "Vercel"]
+    name: "CSL",
+    desc: "开源、跨平台、优秀的 Minecraft Java 版启动器。",
+    github: "https://github.com/MrWoods1692/CSL",
+    site: "https://csl.mrcwoods.com",
+    tags: ["Minecraft", "Launcher", "Cross-platform", "Open Source"]
+  },
+  {
+    name: "RA Study",
+    desc: "学生成长系统。",
+    github: "https://github.com/MrWoods1692/ra-study",
+    tags: ["Student", "Growth", "Education"]
+  },
+  {
+    name: "LangBot Plugins",
+    desc: "LangBot 的一些插件。",
+    github: "https://github.com/MrWoods1692/langbot_plugins",
+    site: "https://space.langbot.app/market",
+    tags: ["LangBot", "Plugins", "QQ Bot"]
   }
 ];
 

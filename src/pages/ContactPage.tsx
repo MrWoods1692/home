@@ -51,6 +51,7 @@ export default function ContactPage() {
           const typeMap: Record<string, string> = {
             "企业邮箱": "biz_mail",
             "谷歌邮箱": "google_mail",
+            "Outlook邮箱": "outlook_mail",
             "QQ邮箱": "qq_mail",
             "腾讯QQ": "qq",
             "WeChat": "wechat",

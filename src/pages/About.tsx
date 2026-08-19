@@ -48,7 +48,7 @@ export default function About() {
             </div>
             <div className="space-y-6">
               <p className="text-4xl md:text-5xl font-hand-semibold text-center py-4 leading-tight">
-                "{t('about.motto_text')}"
+                “{t('about.motto_text')}”
               </p>
               <div className="h-px bg-[#5d4037]/20 dark:bg-[#d7ccc8]/20 w-3/4 mx-auto" />
               <p className="text-xl leading-relaxed text-justify opacity-90">

@@ -45,11 +45,6 @@ export function Timeline({ items }: { items: TimelineItemProps[] }) {
               )}
 
               <div className="paper-card hand-border hover:shadow-2xl transition-all duration-300 group-hover/card:-translate-y-1 bg-white dark:bg-neutral-900 overflow-hidden">
-                {/* Decoration tape */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-6 bg-primary/10 -translate-y-1/2 rotate-1 z-20 pointer-events-none opacity-0 group-hover/card:opacity-100 transition-opacity" style={{
-                  maskImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'40\'%3E%3Cpath d=\'M0 10 L10 5 L20 15 L30 8 L40 18 L50 10 L60 20 L70 12 L80 22 L90 15 L100 25 L100 35 L0 35 Z\' /%3E%3C/svg%3E")'
-                }} />
-
                 <div className="space-y-3">
                   {item.stage && (
                     <h3 className="text-2xl text-primary font-hand-semibold border-b border-primary/10 pb-1">{item.stage}</h3>

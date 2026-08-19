@@ -25,15 +25,26 @@ export function ProjectList() {
 
   const getProjectDesc = (name: string, fallback: string) => {
     const keyMap: Record<string, string> = {
-      "LangBot": "langbot",
-      "Xmail Pro": "xmail",
+      "Mosoo": "mosoo",
       "Campux": "campux",
+      "Memories": "memories",
+      "Blog": "blog",
+      "Free-one-api": "free_one_api",
+      "AI智能助手": "ai_assistant",
+      "LangBot": "langbot",
+      "NewsNook": "newsnook",
+      "Twilight Echo": "twilight_echo",
+      "个人主页": "personal_home",
+      "258": "twenty58",
+      "Xmail Pro": "xmail",
+      "KG-Campux": "kg_campux",
       "在线C++IDE": "cpp_ide",
       "云端图片储存平台": "img_cloud",
-      "AI智能助手": "ai_assistant",
       "Hydro-OJ-IDE": "hydro_oj",
-      "Free-one-api": "free_one_api",
-      "个人主页": "personal_home"
+      "QQ Repo Guardian": "qq_repo_guardian",
+      "CSL": "csl",
+      "RA Study": "ra_study",
+      "LangBot Plugins": "langbot_plugins"
     };
     const key = keyMap[name];
     return projectItems[key] || fallback;
