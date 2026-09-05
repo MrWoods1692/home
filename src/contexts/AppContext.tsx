@@ -18,7 +18,7 @@ const translations: Record<Language, Translation> = {
     },
     home: {
       welcome: '欢迎来到我的主页',
-      bio: "一个热爱技术、追求极致的高中生，专注于Github开源项目开发。喜欢探索各种新奇的技术栈，从底层的 C++ 到现代的 Rust，从传统的后端 PHP 到现代的微服务架构。目前正在桂林市奎光学校就读，致力于成为一名“优秀”的全栈开发工程师(bushi)。",
+      bio: "一个热爱技术、追求极致的高中生，专注于Github开源项目开发。喜欢探索各种新奇的技术栈，从底层的 C++ 到现代的 Rust，从传统的后端 PHP 到现代的微服务架构。目前正在桂林市桂林中学就读，致力于成为一名“优秀”的全栈开发工程师(bushi)。",
       recent_title: '最近动态',
       recent_content: '正在深耕 Rust 开发，并探索 AI Agent 在自动化工作流中的更多可能性。',
       recent_item1: '完成了 Memories 的大体开发',
@@ -209,7 +209,7 @@ const translations: Record<Language, Translation> = {
     },
     home: {
       welcome: 'Welcome to My Home',
-      bio: 'A tech-enthusiast junior high student pursuing excellence, focusing on project development and algorithm competitions. I love exploring various tech stacks, from low-level C++ to modern Rust, from traditional backend PHP to modern microservices architecture. Currently studying at Guilin Kuiguang School, striving to become an excellent full-stack engineer.',
+      bio: 'A tech-enthusiast high school student, focused on GitHub open-source projects. I love exploring various tech stacks, from low-level C++ to modern Rust, from traditional backend PHP to modern microservices architecture. Currently studying at Guilin No.1 High School, striving to become an "excellent" full-stack engineer (lol).',
       recent_title: 'Recent Updates',
       recent_content: 'Deeply involved in Rust development and exploring AI Agents in automated workflows.',
       recent_item1: 'Completed the core framework of Campux-Memories',
