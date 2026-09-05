@@ -209,7 +209,7 @@ const translations: Record<Language, Translation> = {
     },
     home: {
       welcome: 'Welcome to My Home',
-      bio: 'A tech-enthusiast high school student, focused on GitHub open-source projects. I love exploring various tech stacks, from low-level C++ to modern Rust, from traditional backend PHP to modern microservices architecture. Currently studying at Guilin No.1 High School, striving to become an "excellent" full-stack engineer (lol).',
+      bio: 'A tech-enthusiast high school student, focused on GitHub open-source projects. I love exploring various tech stacks, from low-level C++ to modern Rust, from traditional backend PHP to modern microservices architecture. Currently studying at Guilin Middle School, striving to become an "excellent" full-stack engineer (lol).',
       recent_title: 'Recent Updates',
       recent_content: 'Deeply involved in Rust development and exploring AI Agents in automated workflows.',
       recent_item1: 'Completed the core framework of Campux-Memories',
