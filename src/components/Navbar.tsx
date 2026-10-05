@@ -66,7 +66,7 @@ export function Navbar() {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="center" className="hand-border bg-white text-black border-black/20 min-w-[130px] p-1.5 z-[1000]">
-              <DropdownMenuItem onClick={() => setLanguage('zh-CN')} className="rounded-md hover:bg-black/10 focus:bg-black/10 focus:text-black cursor-pointer">简体中文</DropdownMenuItem>
+              <DropdownMenuItem onClick={() => setLanguage('zh-CN')} className="rounded-md hover:bg-black/10 focus:bg-black/10 focus:text-black cursor-pointer">{t('common.language_zh')}</DropdownMenuItem>
               <DropdownMenuItem onClick={() => setLanguage('en')} className="rounded-md hover:bg-black/10 focus:bg-black/10 focus:text-black cursor-pointer">English</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
+import { useLanguage } from "@/contexts/AppContext";
 
 export function BackToTop() {
+  const { t } = useLanguage();
   const [progress, setProgress] = useState(0);
   const [visible, setVisible] = useState(false);
 
@@ -32,7 +34,7 @@ export function BackToTop() {
   return (
     <button
       onClick={scrollToTop}
-      aria-label="返回顶部"
+      aria-label={t('common.back_to_top')}
       className={`fixed bottom-8 right-8 z-50 flex items-center justify-center transition-all duration-500 w-12 h-12 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
       }`}

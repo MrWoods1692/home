@@ -141,6 +141,16 @@ const translations: Record<Language, Translation> = {
       aifadian: '爱发电',
       visit: '点击访问',
       girlfriend: '女友',
+      language_zh: '简体中文',
+      footer_online: '在线',
+      back_to_top: '返回顶部',
+      footer_status: '运行中',
+      time: {
+        day: '天',
+        hour: '时',
+        minute: '分',
+        second: '秒'
+      },
       skills: {
         bt_panel: '宝塔面板',
         runtime: '运行环境',
@@ -348,6 +358,25 @@ const translations: Record<Language, Translation> = {
       dark: 'Dark',
       menu: 'Menu',
       aifadian: 'Aifadian',
+      language_zh: 'Simplified Chinese',
+      footer_online: 'Online',
+      back_to_top: 'Back to Top',
+      footer_status: 'Running',
+      time: {
+        day: ' Days',
+        hour: ' Hours',
+        minute: ' Minutes',
+        second: ' Seconds'
+      },
+      language_zh: 'Simplified Chinese',
+      footer_online: 'Online',
+      back_to_top: 'Back to Top',
+      time: {
+        day: ' Days',
+        hour: ' Hours',
+        minute: ' Minutes',
+        second: ' Seconds'
+      },
       visit: 'Visit Page',
       girlfriend: 'Girlfriend',
       skills: {
@@ -406,6 +435,16 @@ const translations: Record<Language, Translation> = {
         us: 'Only the Place With You and Me'
       }
     }
+  
+      language_zh: 'Simplified Chinese',
+      footer_online: 'Online',
+      back_to_top: 'Back to Top',
+      time: {
+        day: ' Days',
+        hour: ' Hours',
+        minute: ' Minutes',
+        second: ' Seconds'
+      },
   }
 };
 

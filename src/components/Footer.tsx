@@ -18,11 +18,8 @@ export function Footer() {
       const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
       let timeStr = "";
-      if (language === "en") {
-        timeStr = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-      } else {
-        timeStr = `${days}天 ${hours}时 ${minutes}分 ${seconds}秒`;
-      }
+      const units = t('common.time');
+      timeStr = `${days}${units.day} ${hours}${units.hour} ${minutes}${units.minute} ${seconds}${units.second}`;
       setRunningTime(timeStr);
     }, 1000);
 
@@ -51,7 +48,7 @@ export function Footer() {
           {/* Middle: Running Time Entry */}
           <div className="flex flex-col items-center gap-2 p-6 paper-card hand-border bg-white/50 dark:bg-neutral-900/50 rotate-1 shadow-xl">
             <p className="text-sm uppercase tracking-widest opacity-40 font-hand-semibold">
-              {language === 'en' ? 'Online' : '在线'}
+              {t('common.footer_online')}
             </p>
             <p className="text-2xl font-hand-semibold text-primary">
               {runningTime}
