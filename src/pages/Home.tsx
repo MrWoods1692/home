@@ -38,6 +38,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* IP Card */}
+      <section className="flex justify-center">
+        <a
+          href="https://ip.net.coffee/ip/"
+          target="_blank"
+          rel="noreferrer"
+          className="block max-w-[480px] w-full"
+        >
+          <img
+            src="https://card.net.coffee/v1/card.svg?style=anime-sky&sticker=sakura&w=480"
+            alt="IP 信息卡片"
+            title="查看 IP"
+            className="w-full h-auto rounded-xl shadow-lg"
+          />
+        </a>
+      </section>
+
       {/* Grid Highlights */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
         <div className="paper-3d-white p-8 space-y-4 hover:rotate-1 transition-transform">
