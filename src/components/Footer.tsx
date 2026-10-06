@@ -18,8 +18,7 @@ export function Footer() {
       const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
       let timeStr = "";
-      const units = t('common.time');
-      timeStr = `${days}${units.day} ${hours}${units.hour} ${minutes}${units.minute} ${seconds}${units.second}`;
+      timeStr = `${days}${t('common.time.day')} ${hours}${t('common.time.hour')} ${minutes}${t('common.time.minute')} ${seconds}${t('common.time.second')}`;
       setRunningTime(timeStr);
     }, 1000);
 

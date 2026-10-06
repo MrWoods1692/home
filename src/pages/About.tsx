@@ -79,6 +79,17 @@ export default function About() {
                 const key = stageMap[exp.stage];
                 const translated = key ? t(`about.academic_stages.${key}`) : '';
                 return translated && translated !== `about.academic_stages.${key}` ? translated : exp.stage;
+              })(),
+              school: (() => {
+                const schoolMap: Record<string, string> = {
+                  '万福幼儿园': 'wanfu',
+                  '象山区博雅双语学校': 'boya',
+                  '桂林市奎光学校': 'kuiguang',
+                  '桂林市桂林中学': 'guilinzx'
+                };
+                const key = schoolMap[exp.school];
+                const translated = key ? t(`about.academic_schools.${key}`) : '';
+                return translated && translated !== `about.academic_schools.${key}` ? translated : exp.school;
               })()
             }))} />
           )}
@@ -92,6 +103,20 @@ export default function About() {
           {showAwards && (
             <Timeline items={AWARDS.map(aw => ({
               ...aw,
+              title: (() => {
+                const titleMap: Record<string, string> = {
+                  'CSP-J二等奖': 'cspj2',
+                  '中学生数理化生综合实践活动证书·建模论文和实验报告·生物·二等奖': 'modeling_bio_2',
+                  '创意编程·初中组·一等奖': 'creative_junior_1',
+                  '桂林市青少年科技创新大赛·青少年科技DV作品·二等奖': 'guilin_dv_2',
+                  '中学生数理化生综合实践活动证书·物理·二等奖': 'physics_2',
+                  '中学生数理化生综合实践活动证书·生物·三等奖': 'bio_3',
+                  '广西中小学生程序设计挑战赛·入门组·一等奖': 'gx_programming_1'
+                };
+                const key = titleMap[aw.title];
+                const translated = key ? t(`about.award_titles.${key}`) : '';
+                return translated && translated !== `about.award_titles.${key}` ? translated : aw.title;
+              })(),
               organization: (() => {
                 const orgMap: Record<string, string> = {
                   '中国计算机协会': 'ccf',
@@ -102,7 +127,16 @@ export default function About() {
                 const key = orgMap[aw.organization];
                 const translated = key ? t(`about.award_orgs.${key}`) : '';
                 return translated && translated !== `about.award_orgs.${key}` ? translated : aw.organization;
-              })()
+              })(),
+              project: aw.project ? (() => {
+                const projectMap: Record<string, string> = {
+                  '作品《AI智能助手》': 'ai_assistant',
+                  '作品《车轮里的秘密》': 'wheel_secret'
+                };
+                const key = projectMap[aw.project];
+                const translated = key ? t(`about.award_projects.${key}`) : '';
+                return translated && translated !== `about.award_projects.${key}` ? translated : aw.project;
+              })() : undefined
             }))} />
           )}
         </div>

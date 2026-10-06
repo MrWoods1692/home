@@ -48,6 +48,37 @@ const translations: Record<Language, Translation> = {
       alert_message: '即将跳转到 https://rockchin.top/ ，是否继续？',
       hometown_click: '点击图片查看详情内容',
       inspiration: '人最宝贵的是生命。生命对于每个人只有一次。人的一生应当这样度过：当回首往事时，他不因虚度年华而悔恨，也不因碌碌无为而羞耻；这样，在临死的时候，他能够说：“我的整个生命和全部精力，都已经献给了世界上最壮丽的事业——为人类的解放而斗争。”',
+      academic_stages: {
+        preschool: '幼儿园',
+        primary: '小学',
+        junior: '初中',
+        senior: '高中'
+      },
+      academic_schools: {
+        wanfu: '万福幼儿园',
+        boya: '象山区博雅双语学校',
+        kuiguang: '桂林市奎光学校',
+        guilinzx: '桂林市桂林中学'
+      },
+      award_orgs: {
+        ccf: '中国计算机协会',
+        activity: '活动',
+        guilinEdu: '桂林市教育局',
+        gxcf: '广西计算机协会'
+      },
+      award_titles: {
+        cspj2: 'CSP-J二等奖',
+        modeling_bio_2: '中学生数理化生综合实践活动证书·建模论文和实验报告·生物·二等奖',
+        creative_junior_1: '创意编程·初中组·一等奖',
+        guilin_dv_2: '桂林市青少年科技创新大赛·青少年科技DV作品·二等奖',
+        physics_2: '中学生数理化生综合实践活动证书·物理·二等奖',
+        bio_3: '中学生数理化生综合实践活动证书·生物·三等奖',
+        gx_programming_1: '广西中小学生程序设计挑战赛·入门组·一等奖'
+      },
+      award_projects: {
+        ai_assistant: '作品《AI智能助手》',
+        wheel_secret: '作品《车轮里的秘密》'
+      },
       hometown_desc: [
         '漓江如一条碧绿的绸带，蜿蜒于奇峰之间，竹筏轻荡，山水入画，这便是我魂牵梦绕的故乡。',
         '象鼻山静卧于漓江畔，如一头巨象饮水，夜幕降临时灯火阑珊，更显神秘动人。',
@@ -267,6 +298,25 @@ const translations: Record<Language, Translation> = {
         moke: 'Older sister. Student at Guolong.',
         m: '...'
       },
+      academic_schools: {
+        wanfu: 'Wanfu Kindergarten',
+        boya: 'Xiangshan Boya Bilingual School',
+        kuiguang: 'Guilin Kuiguang School',
+        guilinzx: 'Guilin Middle School'
+      },
+      award_titles: {
+        cspj2: 'CSP-J Second Prize',
+        modeling_bio_2: 'Comprehensive Practice Activity Certificate · Modeling Thesis & Experimental Report · Biology · Second Prize',
+        creative_junior_1: 'Creative Programming · Junior High Group · First Prize',
+        guilin_dv_2: 'Guilin Youth Science & Technology Innovation Competition · Sci-Tech DV Work · Second Prize',
+        physics_2: 'Comprehensive Practice Activity Certificate · Physics · Second Prize',
+        bio_3: 'Comprehensive Practice Activity Certificate · Biology · Third Prize',
+        gx_programming_1: 'Guangxi Primary & Secondary School Programming Challenge · Entry Group · First Prize'
+      },
+      award_projects: {
+        ai_assistant: 'Work: AI Intelligent Assistant',
+        wheel_secret: 'Work: The Secret in the Wheels'
+      },
       hometown_desc: [
         'The Li River winds like a jade ribbon through towering karst peaks — bamboo rafts drift by, and every view is a painting from my beloved hometown.',
         'Elephant Trunk Hill rests by the Li River like a giant elephant drinking water; at night, its lights glow with an enchanting mystery.',
@@ -368,15 +418,6 @@ const translations: Record<Language, Translation> = {
         minute: ' Minutes',
         second: ' Seconds'
       },
-      language_zh: 'Simplified Chinese',
-      footer_online: 'Online',
-      back_to_top: 'Back to Top',
-      time: {
-        day: ' Days',
-        hour: ' Hours',
-        minute: ' Minutes',
-        second: ' Seconds'
-      },
       visit: 'Visit Page',
       girlfriend: 'Girlfriend',
       skills: {
@@ -435,16 +476,6 @@ const translations: Record<Language, Translation> = {
         us: 'Only the Place With You and Me'
       }
     }
-  
-      language_zh: 'Simplified Chinese',
-      footer_online: 'Online',
-      back_to_top: 'Back to Top',
-      time: {
-        day: ' Days',
-        hour: ' Hours',
-        minute: ' Minutes',
-        second: ' Seconds'
-      },
   }
 };
 
